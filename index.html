@@ -15,6 +15,13 @@
           <ul>
             <li>
               <a href="#">Каталог</a>
+              <ul>
+                <li><a href="#">Новинки</a></li>
+                <li><a href="#">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лед</a></li>
+                <li><a href="#">Мелорин</a></li>
+              </ul>
             </li>
             <li>
               <a href="#">Доставка и оплата</a>
@@ -46,27 +53,26 @@
           <span>С 10 до 20, ежедневно</span>
           <span><a href="tel:8 812 450-25-25"></a></span>
         </div>
-        <figure class="ice-cream">
-          <img src="http://placehold.it/150x100">
-          <img src="http://placehold.it/150x100">
-        </figure>
-        <h2>Крем-брюле и пломбир с малиновым джемом</h2>
         <div class="btn-give-both">
           <a href="#">Давайте оба</a>
         </div>
-        <div class="pagination">
-             <ul>
-               <li>
-                 <a class="btn-page" href="#">1</a>
-               </li>
-               <li>
-                 <a class="btn-page" href="#">2</a>
-               </li>
-               <li>
-                 <a class="btn-page" href="#">3</a>
-               </li>
-             </ul>
-           </div>
+        <div class="slider">
+          <input type="radio" name="slider-page" id="slider-cream-brulee" checked>
+          <label for="slider-cream-brulee"></label>
+          <div class="background-page cream-brulee">
+            <h2>Крем-брюле и пломбир с малиновым джемом</h2>
+          </div>
+          <input type="radio" name="slider-page" id="slider-chocolate">
+          <label for="slider-chocolate"></label>
+          <div class="background-page chocolate">
+            <h2>Шоколадный пломбир и лимонный сорбет</h2>
+          </div>
+          <input type="radio" name="slider-page" id="slider-cream-strawberry">
+          <label for="slider-cream-strawberry"></label>
+          <div class="background-page cream-strawberry">
+            <h2>Пломбир с помадкой и клубничный щербет</h2>
+          </div>
+        </div>
       </section>
       <!-- Бонусы при покупке 2х кг-->
       <section class="bonus">
@@ -83,36 +89,34 @@
       </section>
       <!-- Мороженные хиты-->
       <section class="popular-ice">
-        <ul>
-          <li class="ice-cream-item">
+          <div class="ice-cream-item">
             <div class="ice-cream-hit">
               <img src="#">
             </div>
             <span>310₽/кг</span>
             <h4>Сливочное с апельсиновым джемом и цитрусовой стружкой</h4>
-          </li>
-          <li class="ice-cream-item">
+          </div>
+          <div class="ice-cream-item">
             <div class="ice-cream-hit">
               <img src="#">
             </div>
             <span>380₽/кг</span>
             <h4>Сливочно-кофейное с кусочками шоколада</h4>
-          </li>
-          <li class="ice-cream-item">
+          </div>
+          <div class="ice-cream-item">
             <div class="ice-cream-hit">
               <img src="#">
             </div>
             <span>355₽/кг</span>
             <h4>Сливочно-клубничное с присыпкой из белого шоколада</h4>
-          </li>
-          <li class="ice-cream-item">
+          </div>
+          <div class="ice-cream-item">
             <div class="ice-cream-hit">
               <img src="#">
             </div>
             <span>415₽/кг</span>
             <h4>Сливочное крем-брюле с карамельной подливкой</h4>
-          </li>
-        </ul>
+          </div>
       </section>
       <!--Преимущества Глейси-->
       <article class="quality-gllacy">
@@ -141,9 +145,8 @@
                 что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.
                  Честно =)</p>
                  <form action="https://echo.htmlacademy.ru" method="post">
-                   <label for="mail-field">Ваш логин</label>
-                   <input type="text" name="mail" id="mail-field" value="Электронная почта">
-                   <input type="submit" value="Отправить">
+                   <input type="email" name="mail" id="mail-field" value="Электронная почта">
+                   <button type="submit">Отправить</button>
                  </form>
            </div>
          </div>
@@ -181,7 +184,7 @@
                </li>
              </ul>
            </section>
-           <section class="footer-doc">
+           <nav class="footer-doc-navigation">
              <ul>
                <li>
                  <a href="#">Для поставщиков</a>
@@ -196,14 +199,14 @@
                  <a href="#">Экологические стандарты</a>
                </li>
              </ul>
-           </section>
+           </nav>
            <section class="footer-copyright">
              <div class="footer-logo">
                <img src="#" alt="HTML Academy">
              </div>
-             <p>Сделано в</p>
+             <p>Сделано в
              <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-             <p>© 2017</p>
+             © 2017</p>
            </section>
          </div>
        </footer>
