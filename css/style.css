@@ -1,0 +1,27 @@
+body {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  background-color: #8fa699;
+}
+h2.h-slider {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 60px;
+}
+.bonus h3,
+h1.h-cream {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 41px;
+}
+.popular-ice h3,
+.ice-cream-item h2 {
+  font-size: 16px;
+  line-height: 22px;
+}
+.quality-gllacy h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
