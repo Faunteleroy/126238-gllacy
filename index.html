@@ -23,20 +23,20 @@
         </a>
         <nav class="main-navigation">
           <ul class="main-menu">
-            <li class="li-submenu">
+            <li class="li-submenu menu-item">
               <a href="#">Каталог</a>
               <ul class="main-submenu">
-                <li><a href="#">Новинки</a></li>
-                <li><a href="#">Сливочное</a></li>
+                <li><a class="submenu-line" href="#">Новинки</a></li>
+                <li><a href="catalog.html">Сливочное</a></li>
                 <li><a href="#">Щербеты</a></li>
                 <li><a href="#">Фруктовый лед</a></li>
                 <li><a href="#">Мелорин</a></li>
               </ul>
             </li>
-            <li>
+            <li class="menu-item">
               <a href="#">Доставка и оплата</a>
             </li>
-            <li>
+            <li class="menu-item">
               <a href="#">О компании</a>
             </li>
           </ul>
@@ -98,46 +98,49 @@
           <div class="ice-cream-item">
             <div class="hit"></div>
             <div class="ice-cream">
-              <img src="img/index-hit1.jpg" width="200" height="200">
+              <img src="img/index-hit1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="200" height="200">
             </div>
             <span class="hit-price">310</span>
-            <a class="ice-description" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <a class="ice-description" href="#"><span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span></a>
           </div>
           <div class="ice-cream-item">
             <div class="hit"></div>
             <div class="ice-cream">
-              <img src="img/index-hit2.jpg" width="200" height="200">
+              <img src="img/index-hit2.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="200" height="200">
             </div>
             <span class="hit-price">380</span>
-            <a class="ice-description" href="#">Сливочно-кофейное с кусочками шоколада</a>
+            <a class="ice-description" href="#"><span>Сливочно-кофейное с кусочками шоколада</span></a>
           </div>
           <div class="ice-cream-item">
             <div class="hit"></div>
             <div class="ice-cream">
-              <img src="img/index-hit3.jpg" width="200" height="200">
+              <img src="img/index-hit3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="200" height="200">
             </div>
             <span class="hit-price">355</span>
-            <a class="ice-description" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            <a class="ice-description" href="#"><span>Сливочно-клубничное с присыпкой из белого шоколада</span></a>
           </div>
           <div class="ice-cream-item">
             <div class="hit"></div>
             <div class="ice-cream">
-              <img src="img/index-hit4.jpg" width="200" height="200">
+              <img src="img/index-hit4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="200" height="200">
             </div>
             <span class="hit-price">415</span>
-            <a class="ice-description" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+            <a class="ice-description" href="#"><span>Сливочное крем-брюле с карамельной подливкой</span></a>
           </div>
         </section>
         <!--Преимущества Глейси-->
         <article class="quality-gllacy">
-          <h3>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого
-              собственного производства на развес</h3>
-          <p class="quality-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
-          </p>
-          <p class="quality-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-          <p class="quality-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
-          </p>
-          <p class="quality-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+          <h2>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого
+              собственного производства на развес</h2>
+          <div class="quality">
+            <p class="quality-item ice">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+            </p>
+            <p class="quality-item cow">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+            </p>
+            <p class="quality-item sheet">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+
+            <p class="quality-item temp">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+          </div>
         </article>
         <div class="blog-and-mail">
           <div class="blog">
@@ -146,21 +149,23 @@
               <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
             </div>
           </div>
-          <div class="mail">
-            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <input type="email" name="mail" id="mail-field" value="Электронная почта">
-              <button type="submit">Отправить</button>
-            </form>
+          <div class="mail-border">
+            <div class="mail">
+              <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <input type="email" name="mail" id="mail-field" value="Электронная почта">
+                <button type="submit">Отправить</button>
+              </form>
+            </div>
           </div>
         </div>
         <!--Карта-->
         <section class="map">
           <div class="map-background">
-            <img src="img/map900.png" width="900" height="430">
+            <img src="img/map900.png" alt="Карта" width="900" height="430">
           </div>
           <div class="map-address">
-            <span>Адрес главного офиса и офлайн магазина:</span>
+            <span class="address">Адрес главного офиса и офлайн магазина:</span>
             <address>ул. Большая Конюшенная 19/8, Санкт-Петербург</address>
             <span>Для заказов по телефону:</span>
             <a href="tel:88124502525">8 812 450-25-25</a>
@@ -189,16 +194,16 @@
         </section>
         <nav class="footer-doc-navigation">
           <ul>
-            <li>
-              <a href="#">Для поставщиков</a>
+            <li class="footer-menu-item">
+              <a class="supply" href="#">Для поставщиков</a>
             </li>
-            <li>
+            <li class="footer-menu-item">
               <a href="#">О производстве</a>
             </li>
-            <li>
+            <li class="footer-menu-item">
               <a href="#">Наши документы</a>
             </li>
-            <li>
+            <li class="footer-menu-item">
               <a href="#">Экологические стандарты</a>
             </li>
           </ul>
