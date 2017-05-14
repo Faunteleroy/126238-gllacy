@@ -9,22 +9,16 @@ body {
   background-color: #849d8f;
 }
 
-body>input[type=radio] {
-  display: none;
-}
-
 a {
   text-decoration: none;
   color: #fff;
 }
 
-h2.h-slider {
-  width: 700px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  font-size: 60px;
-  font-weight: bold;
-  line-height: 60px;
+
+/*Управление слайдером*/
+
+.slider-input {
+  display: none;
 }
 
 .site-wrapper {
@@ -52,6 +46,11 @@ h2.h-slider {
   width: 860px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.visibly-hidden {
+  position: absolute;
+  opacity: 0;
 }
 
 
@@ -98,7 +97,7 @@ h2.h-slider {
 
 .main-menu>li {
   position: relative;
-  margin-right: 0;
+  margin-right: -2px;
   padding-bottom: 5px;
   z-index: 10;
   white-space: nowrap;
@@ -162,7 +161,7 @@ h2.h-slider {
   box-sizing: border-box;
 }
 
-.main-menu .menu-item>a:hover {
+.menu-item>a:hover {
   color: #323232;
   text-decoration: none;
   background-color: #f7f6f3;
@@ -188,7 +187,7 @@ h2.h-slider {
   border-radius: 5px;
 }
 
-.main-submenu li:first-child a {
+.submenu-line {
   font-weight: bold;
 }
 
@@ -319,27 +318,27 @@ h2.h-slider {
   top: 70px;
 }
 
-.search-form input[type="search"]:focus+label, input[type="email"]:focus+label, input[type="text"]:focus+label, input[type="textarea"]:focus+label {
+.search-input:focus+label, input[type="email"]:focus+label, input[type="text"]:focus+label, textarea:focus+label {
   opacity: 1;
 }
 
-input[type="search"]:focus::-webkit-input-placeholder, input[type="email"]:focus::-webkit-input-placeholder, input[type="text"]:focus::-webkit-input-placeholder, input[type="textarea"]:focus::-webkit-input-placeholder {
+input[type="search"]:focus::-webkit-input-placeholder, input[type="email"]:focus::-webkit-input-placeholder, input[type="text"]:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-input[type="search"]:focus::-moz-placeholder, input[type="email"]:focus::-moz-placeholder, input[type="text"]:focus::-moz-placeholder, input[type="textarea"]:focus::-moz-placeholder {
+input[type="search"]:focus::-moz-placeholder, input[type="email"]:focus::-moz-placeholder, input[type="text"]:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
   color: transparent;
 }
 
-input[type="search"]:focus:-moz-placeholder, input[type="email"]:focus:-moz-placeholder, input[type="text"]:focus:-moz-placeholder, input[type="textarea"]:focus:-moz-placeholder {
+input[type="search"]:focus:-moz-placeholder, input[type="email"]:focus:-moz-placeholder, input[type="text"]:focus:-moz-placeholder, textarea:focus:-moz-placeholder {
   color: transparent;
 }
 
-input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-input-placeholder, input[type="text"]:focus:-ms-input-placeholder, input[type="textarea"]:focus:-ms-input-placeholder {
+input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-input-placeholder, input[type="text"]:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
   color: transparent;
 }
 
-.search-form input[type="search"]:valid+label, input[type="email"]:valid+label, input[type="text"]:valid+label, input[type="textarea"]:valid+label {
+.search-input:valid+label, input[type="email"]:valid+label, input[type="text"]:valid+label, textarea:valid+label {
   opacity: 0.5;
   color: #323232;
 }
@@ -709,6 +708,15 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   color: #ffffff;
 }
 
+.slider h2.h-slider {
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 60px;
+}
+
 .slider-controls {
   position: absolute;
   bottom: 22px;
@@ -803,8 +811,9 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
 
 .bonus h3 {
   margin: 0;
+  margin-bottom: -2px;
   font-size: 35px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 41px;
 }
 
@@ -836,13 +845,14 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   width: 380px;
   font-size: 18px;
   line-height: 22px;
+  font-weight: 700;
 }
 
 .bonus-btn {
   display: inline-block;
   float: right;
   margin-right: 22px;
-  margin-top: 3px;
+  margin-top: 4px;
   padding: 10px 22px;
   font-size: 18px;
   font-weight: bold;
@@ -935,7 +945,7 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.ice-cream-item:hover .ice-description>span {
+.ice-cream-item:hover .description-border {
   border: none;
 }
 
@@ -1052,6 +1062,7 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   margin-bottom: 0;
   font-size: 24px;
   line-height: 30px;
+  font-weight: 500;
 }
 
 .quality-gllacy .quality {
@@ -1074,9 +1085,9 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   padding: 0;
   padding-left: 55px;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 22px;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 22px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1137,7 +1148,7 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 220px;
-  margin-bottom: 42px;
+  margin-bottom: 35px;
 }
 
 .blog-and-mail .blog {
@@ -1265,7 +1276,7 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   z-index: 3;
   margin-bottom: -5px;
   margin-left: -20px;
-  background-image: url("../img/map900.png");
+  background-image: #fff url("../img/map900.png");
 }
 
 .map a {
@@ -1285,7 +1296,7 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   padding: 25px;
   margin-right: 20px;
   right: 0;
-  top: 63px;
+  top: 65px;
   font-size: 14px;
   font-weight: normal;
   line-height: 20px;
@@ -1319,7 +1330,7 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
 .map .btn-form {
   display: inline-block;
   position: absolute;
-  bottom: 30px;
+  bottom: 27px;
   left: 26px;
   margin-right: 22px;
   padding: 10px 27px;
@@ -1358,8 +1369,12 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  padding-top: 20px;
+  padding-top: 25px;
   border-top: 1px solid rgba(255, 255, 255, .3);
+}
+
+.main-inner .main-footer {
+  padding-top: 20px;
 }
 
 .main-footer a {
@@ -1432,7 +1447,7 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
 
 .main-footer .footer-doc-navigation {
   position: relative;
-  top: -4px;
+  top: 0px;
   left: 5px;
   width: 330px;
   min-height: 80px;
@@ -1663,7 +1678,7 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   box-sizing: border-box;
 }
 
-.modal-content input[type="textarea"] {
+.modal-content textarea {
   width: 428px;
   height: 155px;
   margin-bottom: 25px;
@@ -1678,17 +1693,17 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   box-sizing: border-box;
 }
 
-.modal-content input[type="text"]+label {
+.icon-name+label {
   top: 58px;
   left: 35px;
 }
 
-.modal-content input[type="email"]+label {
+.icon-email+label {
   top: 122px;
   left: 35px;
 }
 
-.modal-content input[type="textarea"]+label {
+.textarea-modal+label {
   top: 190px;
   left: 35px;
 }
@@ -1759,7 +1774,7 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   font-size: 35px;
   font-weight: bold;
   line-height: 41px;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 }
 
 .main-inner .breadcrumbs {
@@ -1768,7 +1783,7 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   display: flex;
   margin: 0;
   margin-top: 27px;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   padding: 0;
   list-style: none;
   font-size: 14px;
@@ -1814,9 +1829,9 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
 /* Поле выбора*/
 
 .catalog-form {
-  margin-bottom: 24px;
+  margin-bottom: 40px;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 16px;
 }
 
@@ -1832,12 +1847,12 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
 }
 
 .catalog-form .sort {
-  margin-right: 10px;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
 }
 
 .catalog-form legend, .catalog-form span {
   display: block;
+  margin-bottom: 7px;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
@@ -1845,12 +1860,12 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
 }
 
 .catalog-form span {
-  margin-bottom: 7px;
-  padding-left: 15px;
+  padding-left: 16px;
 }
 
 .catalog-form fieldset {
   margin: 0;
+  padding: 0 15px;
   font-size: 16px;
   line-height: 36px;
   border: none;
@@ -1862,6 +1877,7 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   padding: 0 35px 0 15px;
   font-size: 16px;
   line-height: 36px;
+  font-weight: 400;
   color: #fff;
   background: rgba(255, 255, 255, 0.2);
   border: none;
@@ -1881,10 +1897,6 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   width: 196px;
 }
 
-.sort legend, .range legend {
-  margin-bottom: 7px;
-}
-
 .catalog-form .form-sort::after {
   content: '';
   position: absolute;
@@ -1902,9 +1914,13 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   background-image: linear-gradient(135deg, black 25%, transparent 25%);
 }
 
+.sort, .catalog-form .range {
+  margin-right: 5px;
+}
+
 .catalog-form .range-controls {
   position: relative;
-  width: 218px;
+  width: 217px;
   height: 37px;
   padding-left: 16px;
   padding-right: 16px;
@@ -1952,10 +1968,15 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   display: none;
 }
 
+.catalog-form input[disabled]+label {
+  opacity: 0.4;
+}
+
 .catalog-form .form-fat, .catalog-form .form-fillers {
   position: relative;
-  height: 37px;
+  height: 36px;
   margin-left: -12px;
+  margin-right: -12px;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 0px;
@@ -1965,11 +1986,15 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   box-sizing: border-box;
 }
 
+.catalog-form .form-fillers {
+  padding-left: 10px;
+}
+
 .form-fat .fat-item, .form-fillers .fillers {
   position: relative;
-  margin-right: 15px;
+  margin-right: 17px;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 36px;
 }
 
@@ -1999,7 +2024,7 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   box-shadow: 0 0 0 2px #fff;
 }
 
-.form-fat input[type=radio]:checked+label::before {
+.form-radio:checked+label::before {
   background-color: #fff;
 }
 
@@ -2025,12 +2050,12 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   box-shadow: 0 0 0 2px #fff;
 }
 
-.form-fillers input[type=checkbox]:checked+label::before {
+.form-checkbox:checked+label::before {
   background-image: url("../img/spritesheet.png");
   background-position: -126px -2px;
 }
 
-.form-fillers input[type=checkbox]:checked+label:hover::before {
+.form-checkbox:checked+label:hover::before {
   background-position: -125px -1px;
 }
 
@@ -2038,8 +2063,8 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   display: inline-block;
   vertical-align: top;
   padding: 7px 29px;
-  height: 37px;
-  margin-top: 20px;
+  height: 36px;
+  margin-top: 23px;
   font-size: 16px;
   font-weight: normal;
   line-height: 18px;
@@ -2078,20 +2103,24 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   position: relative;
-  margin-bottom: 13px;
+  margin-bottom: 20px;
 }
 
 .main-inner .ice-cream-item {
   width: 200px;
   min-height: 310px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+.main-inner .hit-price {
+  top: 138px;
 }
 
 
 /*листалка страниц каталога*/
 
 .row-paginator {
-  height: 50px;
+  height: 56px;
 }
 
 .row-paginator::after {
@@ -2132,6 +2161,8 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
 }
 
 .paginator li:last-child {
+  position: relative;
+  left: 5px;
   margin-left: 0;
   text-align: right;
 }

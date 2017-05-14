@@ -5,21 +5,21 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mincss.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
 </head>
 
 <body>
   <!--input slider'а и обертка сайта для центровки-->
-  <input type="radio" name="slider-page" id="slider-cream-brulee" checked>
-  <input type="radio" name="slider-page" id="slider-chocolate">
-  <input type="radio" name="slider-page" id="slider-cream-strawberry">
+  <input class="slider-input" type="radio" name="slider-page" id="slider-cream-brulee" checked>
+  <input class="slider-input" type="radio" name="slider-page" id="slider-chocolate">
+  <input class="slider-input" type="radio" name="slider-page" id="slider-cream-strawberry">
   <div class="site-wrapper">
     <div class="content-wrapper">
       <!--верхнее меню-->
       <header class="main-header">
         <a class="header-logo">
-          <img src="img/logo.png" alt="Gllacy Shop" width="154" height="64">
+          <img src="img/logotype.png" alt="Gllacy Shop" width="154" height="64">
         </a>
         <nav class="main-navigation">
           <ul class="main-menu">
@@ -37,7 +37,7 @@
               <a href="#">Доставка и оплата</a>
             </li>
             <li class="menu-item">
-              <a href="#">О компании</a>
+              <a href="#">О Компании</a>
             </li>
           </ul>
         </nav>
@@ -47,7 +47,7 @@
               <a class="search" href="#">Поиск</a>
               <div class="search-form">
                 <form action="#" method="get">
-                  <input name="search" type="search" id="search" placeholder="Что ищем?" required>
+                  <input class="search-input" name="search" type="search" id="search" placeholder="Что ищем?" required>
                   <label class="search-header" for="search">Что ищем?</label>
                 </form>
               </div>
@@ -101,6 +101,7 @@
         </section>
         <!-- Бонусы при покупке 2х кг -->
         <section class="bonus">
+          <h2 class="visibly-hidden">Бонусы при покупке 2х килограмм мороженого</h2>
           <section class="bonus-raspberries">
             <h3>Малинка даром!</h3>
             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -114,13 +115,14 @@
         </section>
         <!-- Мороженные хиты-->
         <section class="popular-ice">
+          <h2 class="visibly-hidden">Самые холодные хиты нашего магазина</h2>
           <div class="ice-cream-item index-page">
             <div class="hit"></div>
             <div class="ice-cream">
               <img src="img/index-hit1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="200" height="200">
             </div>
             <span class="hit-price">310</span>
-            <a class="ice-description" href="#"><span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span></a>
+            <a class="ice-description" href="#"><span class="description-border">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></a>
             <a class="btn-item" href="#">Быстрый просмотр</a>
           </div>
           <div class="ice-cream-item index-page">
@@ -129,7 +131,7 @@
               <img src="img/index-hit2.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="200" height="200">
             </div>
             <span class="hit-price">380</span>
-            <a class="ice-description" href="#"><span>Сливочно-кофейное с кусочками шоколада</span></a>
+            <a class="ice-description" href="#"><span class="description-border">Сливочно-кофейное с кусочками шоколада</span></a>
             <a class="btn-item" href="#">Быстрый просмотр</a>
           </div>
           <div class="ice-cream-item index-page">
@@ -138,7 +140,7 @@
               <img src="img/index-hit3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="200" height="200">
             </div>
             <span class="hit-price">355</span>
-            <a class="ice-description" href="#"><span>Сливочно-клубничное с присыпкой из белого шоколада</span></a>
+            <a class="ice-description" href="#"><span class="description-border">Сливочно-клубничное с присыпкой из белого шоколада</span></a>
             <a class="btn-item" href="#">Быстрый просмотр</a>
           </div>
           <div class="ice-cream-item index-page">
@@ -147,7 +149,7 @@
               <img src="img/index-hit4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="200" height="200">
             </div>
             <span class="hit-price">415</span>
-            <a class="ice-description" href="#"><span>Сливочное крем-брюле с карамельной подливкой</span></a>
+            <a class="ice-description" href="#"><span class="description-border">Сливочное крем-брюле с карамельной подливкой</span></a>
             <a class="btn-item" href="#">Быстрый просмотр</a>
           </div>
         </section>
@@ -185,7 +187,8 @@
         </div>
         <!--Карта-->
         <section class="map">
-          <iframe src="https://api-maps.yandex.ru/frame/v1/-/C6uIARjb" width="560" height="400" frameborder="0"></iframe>
+          <h2 class="visibly-hidden">Взгляните на карту: возможно вы - наши соседи. Свяжитесь с нами!</h2>
+          <iframe src="https://api-maps.yandex.ru/frame/v1/-/C6uIARjb" width="900" height="430"></iframe>
           <div class="map-address">
             <span class="address">Адрес главного офиса и офлайн магазина:</span>
             <address>ул. Большая Конюшенная 19/8, Санкт-Петербург</address>
@@ -199,6 +202,7 @@
       <!--Подвал-->
       <footer class="main-footer">
         <section class="footer-social">
+          <h2 class="visibly-hidden">Постоянные новости и предложения в соцсетях: подписывайтесь, ставьте лайк, будем друзьями!</h2>
           <ul class="social">
             <li>
               <a class="social-btn social-btn-tw" href="#">Твиттер</a>
@@ -231,6 +235,7 @@
           </ul>
         </nav>
         <section class="footer-copyright">
+          <h2 class="visibly-hidden">Сайт сделан не просто так, а для учебы. Зайдите на HTML Academy, вам понравится.</h2>
           <div class="footer-logo">
             <img src="img/logo-footer.png" alt="HTML Academy" width="108" height="38">
           </div>
@@ -246,7 +251,7 @@
           <label class="modal-label" for="name">Как вас зовут?</label>
           <input class="icon-email" type="email" id="email-modal" name="email-modal" placeholder="Ваша почта для ответа?" required>
           <label class="modal-label" for="email-modal">Ваша почта для ответа?</label>
-          <input type="textarea" name="textarea" id="textarea-modal" placeholder="Напишите что-нибудь..." required>
+          <textarea class="textarea-modal" name="textarea" id="textarea-modal" placeholder="Напишите что-нибудь..." required rows="10" wrap="soft"></textarea>
           <label class="modal-label" for="textarea-modal">Напишите что-нибудь...</label>
           <button class="modal-btn" type="submit">Отправить</button>
         </form>
@@ -254,33 +259,7 @@
       <div class="modal-overlay"></div>
     </div>
   </div>
-  <script>
-    var link = document.querySelector(".btn-form");
-    var over = document.querySelector(".modal-overlay");
-    var popup = document.querySelector(".modal-content");
-    var close = popup.querySelector(".modal-content-close");
-
-    link.addEventListener("click", function(event) {
-      event.preventDefault();
-      popup.classList.add("modal-content-show");
-      over.classList.add("modal-content-show-overlay");
-    });
-
-    close.addEventListener("click", function(event) {
-      event.preventDefault();
-      popup.classList.remove("modal-content-show");
-      over.classList.remove("modal-content-show-overlay");
-    });
-    window.addEventListener("keydown", function(event) {
-      if (event.keyCode === 27) {
-        if (popup.classList.contains("modal-content-show")) {
-          popup.classList.remove("modal-content-show");
-        }
-        if (over.classList.contains("modal-content-show-overlay")) {
-          over.classList.remove("modal-content-show-overlay");
-        }
-      }
-    });
+  <script src="js/minjs.js">
   </script>
 </body>
 
