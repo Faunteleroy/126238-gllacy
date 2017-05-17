@@ -1226,8 +1226,7 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   position: relative;
   width: 410px;
   min-height: 210px;
-  margin-top: 6px;
-  margin-left: 5px;
+  margin: 5px;
   color: #353535;
   padding: 20px;
   background: #f8f7f4 no-repeat;
