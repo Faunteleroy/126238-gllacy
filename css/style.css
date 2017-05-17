@@ -836,7 +836,7 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   padding-right: 22px;
   padding-bottom: 22px;
   color: #fff;
-  background: #762e43 url("../img/raspberries-back.png") no-repeat;
+  background: #371e2d url("../img/raspberries-back2.png");
   border-radius: 15px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -850,7 +850,7 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   padding-right: 22px;
   padding-bottom: 22px;
   color: #fff;
-  background: #522f1e url("../img/chocolate-back.png") no-repeat;
+  background: #0f0501 url("../img/chocolate-back2.png");
   border-radius: 15px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1174,6 +1174,9 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   min-height: 220px;
   margin-bottom: 40px;
 }
@@ -1215,7 +1218,7 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
 .blog-and-mail .mail-border {
   width: 420px;
   min-height: 220px;
-  background: url("../img/mail-back.png");
+  background: url("../img/mail-back2.png");
   border-radius: 15px;
 }
 
@@ -1700,6 +1703,7 @@ input[type="search"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-
   color: #323232;
   border: 1px solid rgba(178, 178, 178, 0.5);
   border-radius: 5px;
+  resize:none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
